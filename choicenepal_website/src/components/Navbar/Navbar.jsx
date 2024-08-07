@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="container">
       {/* <img src={Logo} className="logo" alt="" /> */}
-      <h3 className="container">Manabiyasewa Logo</h3>
+      <h2 className="container">Manabiyasewa Logo</h2>
       <ul>
         <li>Home</li>
         <li>About Us</li>
