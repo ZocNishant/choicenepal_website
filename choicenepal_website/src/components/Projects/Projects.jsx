@@ -4,7 +4,7 @@ import project_1 from "../../assets/hero.jpg";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <div className="project">
         <img src={project_1} alt="" />
         <div className="caption">

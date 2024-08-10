@@ -1,0 +1,38 @@
+.about {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.about h3 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #212ea0;
+}
+
+.about h2 {
+  font-size: 35px;
+  color: #000f38;
+  margin: 10px 0;
+  max-width: 400px;
+}
+
+.about p {
+  color: #676767;
+  margin-bottom: 15px;
+}
+
+.aboutLeft {
+  flex-basis: 40%;
+}
+
+.aboutImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.aboutRight {
+  flex-basis: 56%;
+}
