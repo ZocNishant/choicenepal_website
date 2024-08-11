@@ -67,3 +67,47 @@
 .userInfo h3 {
   color: #212ea0;
 }
+
+/* media query */
+
+@media (max-width: 800px) {
+  .testimonials {
+    padding: 0 40px;
+  }
+
+  .nextBtn,
+  .backBtn {
+    padding: 10px;
+    width: 35px;
+  }
+  .testimonials ul li {
+    padding: 10px;
+  }
+
+  .slide {
+    padding: 10px;
+  }
+
+  .slide img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #212ea0;
+  }
+}
+
+@media (max-width: 600px) {
+  .userInfo {
+    display: block;
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .userInfo h3 {
+    font-size: 16px;
+  }
+
+  .slider p {
+    font-size: 12px;
+    margin: 10px;
+  }
+}

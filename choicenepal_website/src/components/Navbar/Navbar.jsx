@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/hero.jpg";
+import Menu from "../../assets/menu.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -12,11 +13,16 @@ const Navbar = () => {
     });
   }, []);
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  };
+
   return (
     <nav className={`container ${sticky ? "darkNav" : ""}`}>
       {/* <img src={Logo} className="logo" alt="" /> */}
       <h2 className="logo">Manabiyasewa</h2>
-      <ul>
+      <ul className={mobileMenu ? "" : "hideMobileMenu"}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
@@ -54,6 +60,8 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      <img src={Menu} alt="" className="menuIcon" onClick={toggleMenu} />
     </nav>
   );
 };

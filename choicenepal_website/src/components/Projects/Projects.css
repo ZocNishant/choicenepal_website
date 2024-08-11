@@ -45,3 +45,16 @@
   width: 60px;
   margin-bottom: 10px;
 }
+
+/* media query */
+
+@media (max-width: 650px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-basis: 100%;
+    margin: 20px;
+  }
+}

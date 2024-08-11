@@ -36,3 +36,22 @@
 .aboutRight {
   flex-basis: 56%;
 }
+
+/* media query */
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .aboutLeft {
+    flex-basis: 100%;
+    margin: 20px;
+    order: 2;
+  }
+
+  .aboutRight {
+    flex-basis: 100%;
+    margin: 20px;
+  }
+}

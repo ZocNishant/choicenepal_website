@@ -49,3 +49,19 @@
   display: block;
   margin: 20px 0;
 }
+
+/* media query */
+
+@media (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+
+  .contactLeft {
+    padding: 20px;
+  }
+
+  .contactRight {
+    padding: 20px;
+  }
+}

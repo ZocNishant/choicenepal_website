@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css";
-import Image from "../../assets/hero.jpg";
+import GroupImg from "../../assets/about.png";
 
 const About = () => {
   return (
     <div id="aboutUs" className="about">
       <div className="aboutLeft">
-        <img className="aboutImg" src={Image} alt="" />
+        <img className="aboutImg" src={GroupImg} alt="" />
       </div>
       <div className="aboutRight">
         <h3>About Us</h3>
