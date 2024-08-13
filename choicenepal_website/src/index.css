@@ -7,6 +7,10 @@
   font-family: "Outfit", sans-serif;
 }
 
+*::selection {
+  background: #7f7f7f;
+}
+
 body {
   background-color: #f5f5f5;
 }
