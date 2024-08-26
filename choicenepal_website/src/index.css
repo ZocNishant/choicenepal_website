@@ -8,7 +8,11 @@
 }
 
 *::selection {
-  background: #7f7f7f;
+  background: #a5ad61;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -42,8 +46,7 @@ a {
 }
 
 .btn.darkBtn {
-  background: #212ea0;
-  /* background: red; */
+  background: #a5ad61;
   color: #fff;
 }
 

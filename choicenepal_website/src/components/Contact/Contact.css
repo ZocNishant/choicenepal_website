@@ -12,7 +12,7 @@
 }
 
 .contactLeft h3 {
-  color: #000f38;
+  color: #556713;
   font-weight: 500;
   font-size: 25px;
 }
@@ -36,13 +36,14 @@
 .contactRight form textarea {
   display: block;
   width: 100%;
-  background: #ebecfe;
+  background: #e2e7b2;
   padding: 15px;
   border: 0;
   outline: 0;
   margin-bottom: 15px;
   margin-top: 5px;
   resize: none;
+  border-radius: 8px;
 }
 
 .contactRight span {

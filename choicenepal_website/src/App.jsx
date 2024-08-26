@@ -15,10 +15,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-        <Title subtitle="Projects" title="What we do" />
-        <Projects />
         <Title subtitle="About Us" title="Know more about Manabiyasewa" />
         <About />
+        <Title subtitle="Projects" title="What we do" />
+        <Projects />
         <Title
           subtitle="Gallery"
           title="Pictures from the different projects we are involed in"
