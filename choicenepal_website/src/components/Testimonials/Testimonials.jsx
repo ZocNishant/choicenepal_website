@@ -77,8 +77,9 @@ const Testimonials = () => {
               </div>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, nobis!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Pariatur nostrum numquam nihil nulla esse ipsa vero at. Enim,
+                eveniet consequuntur!
               </p>
             </div>
           </li>
