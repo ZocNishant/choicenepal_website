@@ -1,15 +1,16 @@
 import React from "react";
 import "./Projects.css";
 import project_1 from "../../assets/hero.jpg";
+import tap from "../../assets/tap.jpg";
 
 const Projects = () => {
   return (
     <>
       <div id="projects" className="projects">
         <div className="project">
-          <img src={project_1} alt="" />
+          <img src={tap} alt="" />
           <div className="caption">
-            <img src={project_1} alt="" />
+            <img src={tap} alt="" />
             <p>Water Project</p>
           </div>
         </div>
