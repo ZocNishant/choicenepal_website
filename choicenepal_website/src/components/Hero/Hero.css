@@ -13,7 +13,7 @@
 
 .heroText {
   text-align: center;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
 .heroText h1 {
@@ -22,7 +22,7 @@
 }
 
 .heroText p {
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 10px auto 20px;
   line-height: 1.4;
 }

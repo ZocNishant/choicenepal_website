@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className={`container ${sticky ? "darkNav" : ""}`}>
       {/* <img src={Logo} className="logo" alt="" /> */}
-      <h2 className="logo">Manabiyasewa</h2>
+      <h2 className="logo">CHOICE</h2>
       <ul className={mobileMenu ? "" : "hideMobileMenu"}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
