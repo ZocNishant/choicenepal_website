@@ -16,6 +16,12 @@
   cursor: pointer;
   background: #556713;
   color: #fff;
+  transition: background 0.3s ease;
+}
+
+.nextBtn:hover,
+.backBtn:hover {
+  background: #43530d;
 }
 
 .backBtn {
@@ -31,21 +37,32 @@
   display: flex;
   width: 200%;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: transform 0.7s ease-in-out; /* Smooth transition */
 }
 
 .slider ul li {
   list-style: none;
   width: 50%;
   padding: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth scaling and opacity */
+}
+
+.slider ul li.showing {
+  transform: scale(1.05); /* Slight scaling for active slide */
+  opacity: 1;
+}
+
+.slider ul li:not(.showing) {
+  opacity: 0.7;
 }
 
 .slide {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
   border-radius: 10px;
   color: #676767;
   line-height: 1.4;
+  transition: transform 0.3s ease;
 }
 
 .slide img {
@@ -68,7 +85,7 @@
   color: #556713;
 }
 
-/* media query */
+/* Media query for responsiveness */
 
 @media (max-width: 800px) {
   .testimonials {
@@ -80,7 +97,8 @@
     padding: 10px;
     width: 35px;
   }
-  .testimonials ul li {
+
+  .slider ul li {
     padding: 10px;
   }
 

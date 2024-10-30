@@ -1,9 +1,19 @@
+/* Main projects container */
 .projects {
   margin: 80px auto;
   width: 90%;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
+}
+
+/* Individual project styling */
+.project {
+  flex: 1 1 30%; /* 3 items per row with space in-between */
+  position: relative;
+  max-width: 30%;
+  box-sizing: border-box;
 }
 
 .projects img {
@@ -12,11 +22,7 @@
   display: block;
 }
 
-.project {
-  flex-basis: 31%;
-  position: relative;
-}
-
+/* Caption overlay */
 .caption {
   border-radius: 10px;
   position: absolute;
@@ -46,8 +52,53 @@
   margin-bottom: 10px;
 }
 
-/* media query */
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
 
+.popup-content {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 80vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #333;
+}
+
+.popup-content img {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+/* Optional scrollbar styling for the popup */
+.popup-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Responsive styling for mobile screens */
 @media (max-width: 650px) {
   .projects {
     flex-direction: column;

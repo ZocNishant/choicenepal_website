@@ -1,28 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import Logo from "../../assets/hero.jpg";
 import Menu from "../../assets/menu.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 300 ? setSticky(true) : setSticky(false);
-    });
+    const handleScroll = () => {
+      setSticky(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
-  const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+    setMobileMenu((prev) => !prev);
   };
 
   return (
     <nav className={`container ${sticky ? "darkNav" : ""}`}>
-      {/* <img src={Logo} className="logo" alt="" /> */}
       <h2 className="logo">CHOICE</h2>
-      <ul className={mobileMenu ? "" : "hideMobileMenu"}>
+      <ul className={mobileMenu ? "showMenu" : ""}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
@@ -49,19 +53,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-260}
-            duration={500}
-            className="btn"
-          >
+          <Link to="contact" smooth={true} offset={-260} duration={500} className="btn">
             Contact Us
           </Link>
         </li>
       </ul>
 
-      <img src={Menu} alt="" className="menuIcon" onClick={toggleMenu} />
+      <img src={Menu} alt="Menu" className="menuIcon" onClick={toggleMenu} />
     </nav>
   );
 };
