@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -28,8 +27,8 @@ const App = () => {
         <Testimonials />
         <Title subtitle="Contact Us" title="Have a word with us" />
         <Contact />
-        <Footer />
       </div>
+        <Footer />
     </>
   );
 };
