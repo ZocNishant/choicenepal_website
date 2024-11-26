@@ -32,10 +32,10 @@ const Footer = () => {
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#facebook" aria-label="Facebook">🔵</a>
-            <a href="#twitter" aria-label="Twitter">🐦</a>
-            <a href="#instagram" aria-label="Instagram">📸</a>
-            <a href="#linkedin" aria-label="LinkedIn">🔗</a>
+            <a href="#facebook" aria-label="Facebook">FB</a>
+            <a href="#twitter" aria-label="Twitter">X</a>
+            <a href="#instagram" aria-label="Instagram">Insta</a>
+            <a href="#linkedin" aria-label="LinkedIn">LIn</a>
           </div>
         </div>
       </div>
